@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+    
+  </style>
+</head>
+
+<body>
+<h1>Multas: </h1>
+<input type="text" name="txt" id="input_txt">
+<button type="button" value="verificar" onclick="soma()">Calcular</button>
+<div id="mostra">
+  
+</div>
+<script>
+  
+  
+  function soma(){
+    var veloc = document.getElementById('inpu_txt');
+  var multa = Number(veloc.value);
+  
+  var res = getElementById("mostra")
+  
+  res.innerHtml = `Você foi multado por passar a ${multa}km/h`
+    }
+   /* if (multa > 60){
+      
+      res.innerHtml = `Você foi multado por passar a ${multa}km/h`
+    }else{
+      res.innerHtml = `Ok`
+    }
+  }*/
+  
+</script>
+</body>
+</html>
