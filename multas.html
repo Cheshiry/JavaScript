@@ -11,24 +11,26 @@
 </head>
 
 <body>
-<h1>Multas: </h1>
-<input type="text" name="txt" id="input_txt">
-<input type="button" value="Calcular" onclick="soma()" id="button">
-<div id="aparece">
-  aqui...
-</div>
-<script>
-  
-  
-  function soma() {
+  <h1>Multas: </h1>
 
-    var veloc = window.document.getElementById("input_txt");//texto
-    var res = window.document.getElementById("aparece");//div
-    var multa = Number(veloc.value);//converte
-    
-    res.innerHtml = `<p>Você foi multado por passar a ${multa}km/h<p>`);//mostra
+  <input type="text" name="txt" id="input_txt">
+  <input type="button" value="Calcular" id="button" onclick="somar()">
+
+  <div id="aparece">
+    aqui...
+  </div>
+  <script>
   
-  }
+  
+    function somar() {
+
+      var veloc = window.document.getElementById("input_txt");//texto
+      var res = window.document.getElementById("aparece");//div
+      var multa = Number(veloc.value);//converte
+    
+      res.innerHtml = `<p>Você foi multado por passar a ${multa}km/h<p>`);//mostra
+  
+    }
    /* if (multa > 60){
       
       res.innerHtml = `Você foi multado por passar a ${multa}km/h`
@@ -37,6 +39,6 @@
     }
   }*/
   
-</script>
+  </script>
 </body>
 </html>
