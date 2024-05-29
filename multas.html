@@ -22,11 +22,11 @@
   
   function soma(){
 
-    var veloc = document.getElementById("input_txt");
-    var res = document.getElementById("aparece");
-    var multa = Number(veloc.value);
+    var veloc = document.getElementById("input_txt");//texto
+    var res = document.getElementById("aparece");//div
+    var multa = Number(veloc.value);//converte
     
-    res.innerHtml = (`Você foi multado por passar a ${multa}km/h`);
+    res.innerHtml = (`Você foi multado por passar a ${multa}km/h`);//mostra
   
   }
    /* if (multa > 60){
