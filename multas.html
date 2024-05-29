@@ -14,20 +14,21 @@
 <h1>Multas: </h1>
 <input type="text" name="txt" id="input_txt">
 <button type="button" value="verificar" onclick="soma()">Calcular</button>
-<div id="mostra">
-  
+<div id="aparece">
+  aqui...
 </div>
 <script>
   
   
   function soma(){
-    var veloc = document.getElementById('inpu_txt');
-  var multa = Number(veloc.value);
+
+    var veloc = document.getElementById("input_txt");
+    var res = document.getElementById("aparece");
+    var multa = Number(veloc.value);
+    
+    res.innerHtml = (`Você foi multado por passar a ${multa}km/h`);
   
-  var res = getElementById("mostra")
-  
-  res.innerHtml = `Você foi multado por passar a ${multa}km/h`
-    }
+  }
    /* if (multa > 60){
       
       res.innerHtml = `Você foi multado por passar a ${multa}km/h`
