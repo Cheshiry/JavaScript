@@ -20,13 +20,13 @@
 <script>
   
   
-  function soma(){
+  function soma() {
 
-    var veloc = document.getElementById("input_txt");//texto
-    var res = document.getElementById("aparece");//div
+    var veloc = window.document.getElementById("input_txt");//texto
+    var res = window.document.getElementById("aparece");//div
     var multa = Number(veloc.value);//converte
     
-    res.innerHtml = (`Você foi multado por passar a ${multa}km/h`);//mostra
+    res.innerHtml = `<p>Você foi multado por passar a ${multa}km/h<p>`);//mostra
   
   }
    /* if (multa > 60){
