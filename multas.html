@@ -13,7 +13,7 @@
 <body>
   <h1>Multas: </h1>
 
-  <input type="text" name="txt" id="input_txt">
+  <input type="number" name="txt" id="input_txt">
   <input type="button" value="Calcular" id="button" onclick="somar()">
 
   <div id="aparece">
@@ -28,7 +28,7 @@
       var res = window.document.getElementById("aparece");//div
       var multa = Number(veloc.value);//converte
     
-      res.innerHtml = `<p>Você foi multado por passar a ${multa}km/h<p>`;//mostra
+      res.innerHTML = `<p>Você foi multado por passar a ${multa}km/h<p>`;//mostra
   
     }
    /* if (multa > 60){
