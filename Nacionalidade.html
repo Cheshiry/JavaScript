@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta lang="pt-BR">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+    
+  </style>
+</head>
+
+<body>
+  <h1>Nacionalidades: </h1>
+
+  <input type="text" name="txt" id="input_txt">
+  <input type="button" value="Verificar" id="button" onclick="ver()">
+
+  <div id="aparece">
+    aqui...
+  </div>
+  <script>
+  
+  
+    function ver() {
+
+      var pais = document.getElementById("input_txt");//texto
+      var res = window.document.getElementById("aparece");
+      var brasil = "brasil"
+      var pais_ver = String(pais.value);//converte
+    
+      //res.innerHTML = `<p>Você foi multado por passar a ${multa}km/h<p>`;//mostra
+  
+    
+    if (pais_ver == brasil) {
+      
+      res.innerHTML = `Você e do ${pais_ver} então e brasileiro`;
+      
+    }else{
+      res.innerHTML = `Você e do ${pais_ver} então e estrangeiro`;
+      
+    }
+  }  
+  
+  </script>
+</body>
+</html>
