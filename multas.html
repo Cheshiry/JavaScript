@@ -28,16 +28,18 @@
       var res = window.document.getElementById("aparece");//div
       var multa = Number(veloc.value);//converte
     
-      res.innerHTML = `<p>Você foi multado por passar a ${multa}km/h<p>`;//mostra
+      //res.innerHTML = `<p>Você foi multado por passar a ${multa}km/h<p>`;//mostra
   
-    }
-   /* if (multa > 60){
+    
+    if (multa > 60){
       
-      res.innerHtml = `Você foi multado por passar a ${multa}km/h`
+      res.innerHTML = `Você foi multado por passar a ${multa}km/h`
+      res.innerHTML += `<br>Dirija sempre com o sinto`
     }else{
-      res.innerHtml = `Ok`
+      res.innerHTML = `Ok `
+      res.innerHTML += `<br>Dirija sempre com o sinto`
     }
-  }*/
+  }  
   
   </script>
 </body>
