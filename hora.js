@@ -1,9 +1,17 @@
-var hora = 8;
+var agora = new Date();
+var hora = agora.getHours();
 
-if (hora < 12) {
+if (hora < 12 && hora > 6) {
   console.log('Vom dia');
-} else if (hora > 12 || hora < 18) {
+
+} else if (hora > 12 && hora < 18) {
   console.log('Boa tarde');
-} else{
-  console.log('Boa Noite');
+
+} else if (hora <= 6){
+  console.log('Boa Madru');
+
+}else{
+  console.log("Boa noite!");
+  
 }
+
