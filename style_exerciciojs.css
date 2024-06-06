@@ -1,0 +1,42 @@
+:root{
+    --fundo: #3cb0fd;
+    --fonte: normal 15pt Arial;
+    --fundo-section: #fff;
+
+}
+
+*{
+    margin: 0;
+    padding:0;
+    font-family: var(--fonte);
+    
+}
+body{
+    background-color: var(--fundo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+
+}
+section{
+    margin: 5rem;
+    background-color: var(--fundo-section);
+    height: 300px;
+    width: 300px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+footer{
+    display: flex;
+    background-color: rgb(14, 4, 88);
+    color: #fff;
+    height: 109px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
