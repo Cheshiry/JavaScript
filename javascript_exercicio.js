@@ -1,8 +1,11 @@
-function carregar() {
-    var msg = window.document.getElementById("msg");
-    var img = window.document.getElementById("img");
-    var data = new Date();
-    var hora = data.getHours
 
-    msg.innerHTML = "Agora são ${hora} "
+
+function carregar(){
+var msg = window.document.getElementById("");
+var img = window.document.getElementById("");
+var data = new aDate();
+var hora =data.getHours();
+
+msg.innerHtml = "Agora são ${hora} "
+
 }
