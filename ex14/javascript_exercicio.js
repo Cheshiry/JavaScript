@@ -7,6 +7,7 @@ var data = new Date();
 const hora = 13;
 var corpo = document.getElementsByTagName("body");
 
+<<<<<<< HEAD
 msg.innerHTML = (`Agora são ${hora}`);
 
 
@@ -43,4 +44,19 @@ fd6b00 tarde
 
 
 
+=======
+msg.innerHtml = "Agora são ${hora} "
+  if(hora >= 0 && hora < 12){
+    img.src = "";
+    document.body.style.background = "#515154";
+
+}else if(hora >= 12 && hora <= 18){
+img.src = "";
+    document.body.style.background = "#e2cd9f";
+
+}else{
+img.src = "";
+    document.body.style.background = "#b9846f";
+
+>>>>>>> e75c32ad593c2ea8c0548074a7b6aa0b61790733
 }
