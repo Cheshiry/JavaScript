@@ -4,13 +4,14 @@
     --fundo-section: #fff;
 
 }
-
+/*
 *{
     margin: 0;
     padding:0;
     font-family: var(--fonte);
     
 }
+/*
 body{
     background-color: var(--fundo);
     display: flex;
@@ -35,7 +36,7 @@ section{
 
     position: absolute;
     top: 145px;
-    left: 45%;
+    left: 35%;
     font-size: 40px;
 }
 
@@ -56,4 +57,34 @@ footer{
     align-items: center;
 
 }
+
+*/
+body{
+    background-color: #3cfde3;
+    font: normal 15pt Arial;
+    
+}
+
+header{
+    color: #fff;
+    text-align: center;
+}
+
+section{
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    width: 500px;
+    height: 400px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.365);
+    margin: auto;
+    text-align: center;
+}
+
+footer{
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+}
+
 
