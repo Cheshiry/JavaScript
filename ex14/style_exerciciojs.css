@@ -11,7 +11,7 @@
     font-family: var(--fonte);
     
 }
-/*
+
 body{
     background-color: var(--fundo);
     display: flex;
@@ -60,7 +60,7 @@ footer{
 
 */
 body{
-    background-color: #3cfde3;
+    background-color: #528a82;
     font: normal 15pt Arial;
     
 }

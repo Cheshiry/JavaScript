@@ -14,21 +14,21 @@ msg.innerHTML = (`Agora são ${hora}`);
 
 if(hora >= 0 && hora < 12){
 
-    img ="\ex14\morning02.png"
+    img.src ="morning02.png"
     window.alert("manha");
-    corpo.style.backgroundColor = "fcf59c";
+    corpo.style.backgroundColor = "#fcf59c";
 
 }else if (hora >= 12 && hora < 18) {
 
-    img = "\ex14\afternoon.png";
+    img.src = "\afternoon.png";
     window.alert("tarde");
-    corpo.style.backgroundColor = "fd6b00";
+    corpo.style.backgroundColor = "#fd6b00";
 
 } else {
 
-    img = "\ex14\night.png";
+    img.src = "\night.png";
     window.alert("noite");
-    corpo.style.backgroundColor = "100e24";
+    corpo.style.backgroundColor = "#100e24";
 }
 
 
