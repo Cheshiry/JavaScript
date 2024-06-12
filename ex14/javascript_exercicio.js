@@ -2,45 +2,29 @@
 
 function carregar() {
 var msg = document.getElementById("mensagem");
-var img = window.document.getElementById("foto").src;
+var img = window.document.getElementById("foto");
 var data = new Date();
-const hora = 13;
-var corpo = document.getElementsByTagName("body");
+const hora = 22;
+
 
 msg.innerHTML = (`Agora são ${hora}`);
 
+if (hora >= 0 && hora < 12){
 
-
-
-if(hora >= 0 && hora < 12){
-
-    img.src ="morning02.png"
+    img.src ="C:\Users\agnes\OneDrive\Área de Trabalho\Alura Cursos\JavaScript\JavaScript\ex14\morning02.png"
     window.alert("manha");
-    corpo.style.backgroundColor = "#fcf59c";
+    document.body.style.backgroundColor = "#fcf59c";
 
-}else if (hora >= 12 && hora < 18) {
+}else if (hora >= 12 && hora <= 18) {
 
-    img.src = "\afternoon.png";
+    img.src = "C:\Users\agnes\OneDrive\Área de Trabalho\Alura Cursos\JavaScript\JavaScript\ex14\afternoon.png";
     window.alert("tarde");
-    corpo.style.backgroundColor = "#fd6b00";
+    document.body.style.backgroundColor = "#fd6b00";
 
 } else {
 
-    img.src = "\night.png";
+    img.src = "C:\Users\agnes\OneDrive\Área de Trabalho\Alura Cursos\JavaScript\JavaScript\ex14\night.png";
     window.alert("noite");
-    corpo.style.backgroundColor = "#100e24";
+    document.body.style.backgroundColor = "#100e24";
 }
-
-
-/*
-
-fcf59c manha
-fd6b00 tarde
-100e24 noite
-*/
-
-
-
-
-
 }
