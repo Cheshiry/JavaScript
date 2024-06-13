@@ -2,9 +2,9 @@
 
 function carregar() {
 var msg = document.getElementById("mensagem");
-var img = window.document.getElementById("foto");
+var img = document.getElementById("img");
 var data = new Date();
-const hora = 22;
+const hora = data.getHours();
 
 
 msg.innerHTML = (`Agora são ${hora}`);
