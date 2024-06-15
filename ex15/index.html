@@ -1,21 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <section>
-   <div>
-    <input type="text" name="txt" id="txt">
-    <form>
-        
-       <input type="radio" name="sex" value="male"> Masculino
-          <br>
-       <input type="radio" name="sex" value="female"> Feminino
-</form>
-   </div> 
+   <header>
+      <h1>Verificador de idade</h1>
+  </header>
+   <section>
+      <div>
+
+         <form>
+            <p>Ano de nascimento:
+            <input type="number"  name="ano" id="ano" maxlength="4" min="1900" max="2024" placeholder="Ano"><br>
+         </p>
+            <p>Sexo: 
+               <input type="radio" name="radsex" id="masc" checked>
+               <label for="masc"> Masculino</label>
+            <input type="radio" name="radsex" id="fem">
+            <label for="fem">Feminino</label> <br>
+         </p>
+            <input type="button" value="V E R I F I C A R" onclick="verificar()">
+            <input type="reset" value="L I M P A R"><br>
+         </form>
+      </div>
+      <div id="mensagem">
+        <p>preencha para ver o resultado!</p>
+      </div>
    </section>
+   <footer id="rodape">
+      <p> &copy;Ag</p>
+   </footer>
+<script src="script.js"></script>
 </body>
+
 </html>

@@ -1,1 +1,31 @@
-:root
+
+body{
+    background-color: #528a82;
+    font: normal 15pt Arial;
+    align-items: center;
+}
+
+header{
+    color: #fff;
+    text-align: center;
+}
+
+section{
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    width: 300px;
+    height: 250px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.365);
+    margin: auto;
+    text-align: center;
+
+}
+
+footer{
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+}
+
+
